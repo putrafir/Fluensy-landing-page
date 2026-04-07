@@ -27,6 +27,7 @@ export default function FlexibleAccess1Section() {
         </p>
 
         {/* TOP CARDS + + = */}
+
         <div className="mt-12 md:mt-16 bg-[#F9FAFB] p-4 md:p-10 rounded-2xl">
           <div className="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr_auto_1fr] items-center gap-4 md:gap-6">
             {/* CARD 1 */}
@@ -47,6 +48,7 @@ export default function FlexibleAccess1Section() {
               +
             </div>
 
+
             {/* CARD 2 */}
             <div className="p-4 md:p-8 bg-white rounded-xl shadow-[0_20px_50px_rgba(0,0,0,0.15)]">
               <div className="text-blue-600 text-2xl md:text-3xl mb-4 flex justify-center">
@@ -61,10 +63,12 @@ export default function FlexibleAccess1Section() {
               </p>
             </div>
 
+
             {/* EQUAL */}
             <div className="hidden md:flex justify-center items-center text-3xl font-bold text-black">
               =
             </div>
+
 
             {/* CARD 3 */}
             <div className="p-4 md:p-8 bg-white rounded-xl shadow-[0_20px_50px_rgba(0,0,0,0.15)]">

@@ -33,11 +33,13 @@ export default function ChallengesSection() {
         {/* CARDS */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mt-12 md:mt-16">
           {/* CARD 1 */}
+
           <div className="p-6 md:p-8 rounded-xl bg-white shadow-[0_10px_30px_rgba(59,130,246,0.15)] text-left">
             <div className="text-blue-600 text-3xl md:text-4xl mb-4">
               <Users />
             </div>
             <h4 className="font-semibold text-black mb-2 text-base md:text-lg">
+
               Kurangnya Transparansi Audience
             </h4>
             <p className="text-[#4b5563] text-sm md:text-base">
@@ -47,11 +49,13 @@ export default function ChallengesSection() {
           </div>
 
           {/* CARD 2 */}
+
           <div className="p-6 md:p-8 rounded-xl bg-white shadow-[0_10px_30px_rgba(59,130,246,0.15)] text-left">
             <div className="text-blue-600 text-3xl md:text-4xl mb-4">
               <CircleDollarSign />
             </div>
             <h4 className="font-semibold text-black mb-2 text-base md:text-lg">
+
               Alokasi Anggaran yang Kurang Efisien
             </h4>
             <p className="text-[#4b5563] text-sm md:text-base">
@@ -61,11 +65,13 @@ export default function ChallengesSection() {
           </div>
 
           {/* CARD 3 */}
+
           <div className="p-6 md:p-8 rounded-xl bg-white shadow-[0_10px_30px_rgba(59,130,246,0.15)] text-left">
             <div className="text-blue-600 text-3xl md:text-4xl mb-4">
               <TrendingUp />
             </div>
             <h4 className="font-semibold text-black mb-2 text-base md:text-lg">
+
               Keterbatasan Pengukuran ROI
             </h4>
             <p className="text-[#4b5563] text-sm md:text-base">
