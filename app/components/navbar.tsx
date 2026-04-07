@@ -32,7 +32,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto flex items-center justify-between px-4 md:px-8 py-4">
         {/* LOGO */}
         <Image
-          src="/img/logo-fluensy.png"
+          src="/img/logo/logo fluensy dark.svg"
           alt="Fluensy Logo"
           width={120}
           height={40}

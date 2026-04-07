@@ -4,12 +4,12 @@ import Image from "next/image";
 // HERO SECTION
 function HeroSection() {
   return (
-    <section className="min-h-screen w-full pt-16 md:pt-24 lg:pt-32 pb-12 md:pb-16 lg:pb-20 bg-foreground text-center relative overflow-hidden px-4">
+    <section className="min-h-screen w-full pt-20 md:pt-24 lg:pt-32 pb-12 md:pb-16 lg:pb-20 bg-foreground text-center relative overflow-hidden px-4">
       {/* BADGE */}
       <div className="flex justify-center mb-4 md:mb-6">
         <div className="p-[1.5px] rounded-full bg-[linear-gradient(to_right,#1C80F0,#5A64F7,#7855FB,#FF9DE8)]">
           <span className="flex items-center gap-2 px-4 md:px-6 py-2 md:py-3 text-xs md:text-sm font-medium bg-foreground text-black rounded-full">
-            🤖 AI-Powered Platform
+            AI-Powered Platform
           </span>
         </div>
       </div>
@@ -36,19 +36,12 @@ function HeroSection() {
       <div className="flex flex-col sm:flex-row justify-center gap-3 md:gap-4 mt-6 md:mt-8">
         <a
           href="#"
-
           className="px-6 py-2 md:py-3 rounded-xl bg-blue-600 text-white text-sm md:text-base font-semibold hover:bg-blue-700 transition"
-
         >
           Coba Gratis Sekarang
         </a>
 
-        <a
-          href="#"
-          className="px-6 py-2 md:py-3 rounded-xl border border-main-blue text-main-blue text-sm md:text-base font-semibold hover:bg-main-blue hover:text-white transition"
-        >
-          Lihat Demo
-        </a>
+       
       </div>
 
       {/* IMAGE */}
