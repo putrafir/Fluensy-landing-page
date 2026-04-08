@@ -6,33 +6,26 @@ import { FaGoogle } from "react-icons/fa";
 import { useRouter } from "next/navigation";
 import { ArrowLeft } from "lucide-react";
 
-
-
 export default function LoginPage() {
-
-    const router = useRouter();
+  const router = useRouter();
 
   return (
-    
     <div className="min-h-screen flex">
-      
       {/* LEFT SIDE */}
       <div className="hidden md:flex w-1/2 bg-foreground text-[#10324F] flex-col justify-center items-center px-12">
+        <button
+          onClick={() => router.push("/")}
+          className="absolute top-6 left-6 flex items-center gap-2 text-sm hover:opacity-70 transition"
+        >
+          <ArrowLeft size={20} />
+          Back
+        </button>
 
-      <button
-        onClick={() => router.push("/")}
-        className="absolute top-6 left-6 flex items-center gap-2 text-sm hover:opacity-70 transition"
-    >
-        <ArrowLeft size={20} />
-        Back
-    </button>
-      
         <div className="max-w-md text-center">
-          
           {/* Logo */}
           <div className="mb-6 flex justify-center">
             <Image
-              src="img/logo/logo fluensy dark.svg"  
+              src="img/logo/logo fluensy dark.svg"
               alt="Fluensy Logo"
               width={200}
               height={200}
@@ -43,22 +36,19 @@ export default function LoginPage() {
           <h2 className="text-2xl font-semibold leading-snug">
             AI-powered campaign management platform.
           </h2>
-
         </div>
       </div>
 
       {/* RIGHT SIDE */}
       <div className="w-full md:w-1/2 flex items-center justify-center px-6">
         <div className="w-full max-w-md">
-          
           {/* Title */}
-          <h1 className="text-4xl font-bold text-black mb-3">
-            Welcome
-          </h1>
+          <h1 className="text-4xl font-bold text-black mb-3">Welcome</h1>
 
           {/* Subtitle */}
           <p className="text-gray-500 mb-8">
-            Sign in to continue managing creator partnerships and campaign insights.
+            Sign in to continue managing creator partnerships and campaign
+            insights.
           </p>
 
           {/* Google Button */}
@@ -78,9 +68,11 @@ export default function LoginPage() {
 
           {/* Form */}
           <form className="space-y-4">
-            
             {/* Email */}
-            <label htmlFor="email" className="block text-sm font-medium text-black">
+            <label
+              htmlFor="email"
+              className="block text-sm font-medium text-black"
+            >
               Email
             </label>
             <input
@@ -91,7 +83,10 @@ export default function LoginPage() {
             />
 
             {/* Password */}
-            <label htmlFor="password" className="block text-sm font-medium text-black">
+            <label
+              htmlFor="password"
+              className="block text-sm font-medium text-black"
+            >
               Password
             </label>
             <input
@@ -111,10 +106,13 @@ export default function LoginPage() {
           </form>
 
           <p className="text-gray-500 text-sm mt-4 text-center">
-                Are you a new user?{" "}
-                <Link href="/register" className="text-main-blue font-medium hover:underline">
-                    Sign Up
-                </Link>
+            Are you a new user?{" "}
+            <Link
+              href="/register"
+              className="text-main-blue font-medium hover:underline"
+            >
+              Sign Up
+            </Link>
           </p>
 
           {/* Terms */}
@@ -123,7 +121,6 @@ export default function LoginPage() {
             <span className="underline cursor-pointer">Privacy policy</span> &{" "}
             <span className="underline cursor-pointer">Terms of service</span>
           </p>
-
         </div>
       </div>
     </div>
