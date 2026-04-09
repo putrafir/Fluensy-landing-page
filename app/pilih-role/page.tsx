@@ -8,7 +8,7 @@ export default function RoleSelection() {
   const router = useRouter();
 
   const handleBrandSelect = () => {
-    router.push("/search");
+    router.push("/pricing");
   };
 
   return (
