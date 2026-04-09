@@ -159,7 +159,7 @@ export default function Navbar() {
           <div className="absolute inset-x-0 top-full flex justify-center mt-2">
             <div
               ref={featuresRef}
-              className="w-full max-w-screen-sm md:max-w-4xl rounded-[28px] border border-slate-200 bg-white shadow-2xl p-6 mx-4 md:mx-0 overflow-hidden max-h-[90vh]"
+              className="w-full max-w-screen-sm md:max-w-4xl rounded-[28px] border border-slate-200 bg-white shadow-2xl p-4 md:p-6 mx-4 md:mx-0 overflow-hidden max-h-[90vh] overflow-y-auto"
             >
               <div className="grid gap-6 items-start">
                 <div className="space-y-4">
@@ -167,62 +167,72 @@ export default function Navbar() {
                     Product features
                   </p>
                   <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
-                    <div className="bg-neutral-primary-soft block max-w-sm p-6 rounded-base shadow-xs">
-                      <a href="#">
+                    {/* FEATURE CARD 1 */}
+                    <div className="bg-neutral-primary-soft flex flex-row md:flex-col gap-4 p-4 md:p-6 rounded-base shadow-xs items-center md:items-start max-w-full">
+                      <a href="#" className="w-1/3 md:w-full shrink-0">
                         <img
-                          className="rounded-base w-full h-48 object-cover bg-gray-100"
+                          className="rounded-base w-full h-auto md:h-48 object-cover bg-gray-100"
                           src="/img/navbar/feature-smart-matching.png"
                           alt="Smart Matching"
                         />
                       </a>
-                      <a href="#">
-                        <h5 className="mt-6 mb-2 text-lg text-gray-800 font-semibold tracking-tight text-heading">
-                          Smart Matching
-                        </h5>
-                      </a>
-                      <p className="mb-6 text-sm text-gray-800 text-body">
-                        Temukan influencer yang paling sesuai dengan brand Anda
-                        menggunakan AI yang canggih untuk hasil maksimal.
-                      </p>
+                      <div className="w-2/3 md:w-full">
+                        <a href="#">
+                          <h5 className="mb-1 md:mt-2 md:mb-2 text-base md:text-lg text-gray-800 font-semibold tracking-tight text-heading">
+                            Smart Matching
+                          </h5>
+                        </a>
+                        <p className="text-xs md:text-sm text-gray-800 text-body">
+                          Temukan influencer yang paling sesuai dengan brand
+                          Anda menggunakan AI yang canggih untuk hasil maksimal.
+                        </p>
+                      </div>
                     </div>
 
-                    <div className="bg-neutral-primary-soft block max-w-sm p-6 rounded-base shadow-xs">
-                      <a href="#">
+                    {/* FEATURE CARD 2 */}
+                    <div className="bg-neutral-primary-soft flex flex-row md:flex-col gap-4 p-4 md:p-6 rounded-base shadow-xs items-center md:items-start max-w-full">
+                      <a href="#" className="w-1/3 md:w-full shrink-0">
                         <img
-                          className="rounded-base w-full h-48 object-cover bg-gray-100"
+                          className="rounded-base w-full h-auto md:h-48 object-cover bg-gray-100"
                           src="/img/navbar/feature-optimasi-budget.png"
                           alt="Budget Optimization"
                         />
                       </a>
-                      <a href="#">
-                        <h5 className="mt-6 mb-2 text-lg text-gray-800 font-semibold tracking-tight text-heading">
-                          Budget Optimization
-                        </h5>
-                      </a>
-                      <p className="mb-6 text-sm text-gray-800 text-body">
-                        Optimalkan budget iklan Anda secara otomatis untuk
-                        mendapatkan ROI terbaik dari setiap rupiah yang
-                        diinvestasikan.
-                      </p>
+                      <div className="w-2/3 md:w-full">
+                        <a href="#">
+                          <h5 className="mb-1 md:mt-2 md:mb-2 text-base md:text-lg text-gray-800 font-semibold tracking-tight text-heading">
+                            Budget Optimization
+                          </h5>
+                        </a>
+                        <p className="text-xs md:text-sm text-gray-800 text-body">
+                          Optimalkan budget iklan Anda secara otomatis untuk
+                          mendapatkan ROI terbaik dari setiap rupiah yang
+                          diinvestasikan.
+                        </p>
+                      </div>
                     </div>
-                    <div className="bg-neutral-primary-soft block max-w-sm p-6 rounded-base shadow-xs">
-                      <a href="#">
+
+                    {/* FEATURE CARD 3 */}
+                    <div className="bg-neutral-primary-soft flex flex-row md:flex-col gap-4 p-4 md:p-6 rounded-base shadow-xs items-center md:items-start max-w-full">
+                      <a href="#" className="w-1/3 md:w-full shrink-0">
                         <img
-                          className="rounded-base w-full h-48 object-cover bg-gray-100"
+                          className="rounded-base w-full h-auto md:h-48 object-cover bg-gray-100"
                           src="/img/navbar/feature-fake-follower.png"
                           alt="Fake Follower Detection"
                         />
                       </a>
-                      <a href="#">
-                        <h5 className="mt-6 mb-2 text-lg text-gray-800 font-semibold tracking-tight text-heading">
-                          Fake Follower Detection
-                        </h5>
-                      </a>
-                      <p className="mb-6 text-sm text-gray-800 text-body">
-                        Deteksi dan hindari influencer dengan fake followers
-                        menggunakan teknologi AI terdepan untuk memastikan
-                        kredibilitas.
-                      </p>
+                      <div className="w-2/3 md:w-full">
+                        <a href="#">
+                          <h5 className="mb-1 md:mt-2 md:mb-2 text-base md:text-lg text-gray-800 font-semibold tracking-tight text-heading">
+                            Fake Follower Detection
+                          </h5>
+                        </a>
+                        <p className="text-xs md:text-sm text-gray-800 text-body">
+                          Deteksi dan hindari influencer dengan fake followers
+                          menggunakan teknologi AI terdepan untuk memastikan
+                          kredibilitas.
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -242,7 +252,7 @@ export default function Navbar() {
           <div className="absolute inset-x-0 top-full flex justify-center mt-2">
             <div
               ref={resourcesRef}
-              className="w-full max-w-screen-sm md:max-w-6xl rounded-[28px] border border-slate-200 bg-white shadow-2xl p-6 mx-4 md:mx-0 overflow-hidden max-h-[90vh]"
+              className="w-full max-w-screen-sm md:max-w-6xl rounded-[28px] border border-slate-200 bg-white shadow-2xl p-4 md:p-6 mx-4 md:mx-0 overflow-hidden max-h-[90vh] overflow-y-auto"
             >
               <div className="grid gap-6 items-start">
                 <div className="space-y-4">
@@ -251,85 +261,98 @@ export default function Navbar() {
                   </p>
                   <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
                     {/* BLOG CARD */}
-                    <div className="bg-neutral-primary-soft block w-full p-6 rounded-base shadow-xs">
-                      {/* <a href="#">
+                    <div className="bg-neutral-primary-soft flex flex-row md:flex-col gap-4 p-4 md:p-6 rounded-base shadow-xs items-center md:items-start w-full">
+                      {/* Uncomment jika gambar sudah siap
+                      <a href="#" className="w-1/3 md:w-full shrink-0">
                         <img
-                          className="rounded-base w-full h-40 object-cover bg-gray-100"
+                          className="rounded-base w-full h-auto md:h-40 object-cover bg-gray-100"
                           src="/img/navbar/resource-blog.png"
                           alt="Blog"
                         />
-                      </a> */}
-                      <a href="#">
-                        <h5 className="mt-6 mb-2 text-lg text-gray-800 font-semibold tracking-tight text-heading">
-                          Blog
-                        </h5>
                       </a>
-                      <p className="mb-6 text-sm text-gray-800 text-body">
-                        Konten tulisan panjang mengenai program influencer B2C,
-                        termasuk riset orisinal, panduan praktis, dan banyak
-                        lagi.
-                      </p>
+                      */}
+                      <div className="w-full">
+                        <a href="#">
+                          <h5 className="mb-1 md:mt-2 md:mb-2 text-base md:text-lg text-gray-800 font-semibold tracking-tight text-heading">
+                            Blog
+                          </h5>
+                        </a>
+                        <p className="text-xs md:text-sm text-gray-800 text-body">
+                          Konten tulisan panjang mengenai program influencer
+                          B2C, termasuk riset orisinal, panduan praktis, dan
+                          banyak lagi.
+                        </p>
+                      </div>
                     </div>
 
                     {/* NEWSLETTER CARD */}
-                    <div className="bg-neutral-primary-soft block w-full p-6 rounded-base shadow-xs flex flex-col">
-                      {/* <a href="#">
+                    <div className="bg-neutral-primary-soft flex flex-row md:flex-col gap-4 p-4 md:p-6 rounded-base shadow-xs items-center md:items-start w-full h-full">
+                      {/* <a href="#" className="w-1/3 md:w-full shrink-0">
                         <img
-                          className="rounded-base w-full h-40 object-cover bg-gray-100"
+                          className="rounded-base w-full h-auto md:h-40 object-cover bg-gray-100"
                           src="/img/navbar/resource-newsletter.png"
                           alt="Newsletter"
                         />
-                      </a> */}
-                      <a href="#">
-                        <h5 className="mt-6 mb-2 text-lg text-gray-800 font-semibold tracking-tight text-heading">
-                          Newsletter
-                        </h5>
                       </a>
-                      <p className="mb-2 text-sm text-gray-800 text-body flex-grow">
-                        Berlangganan email singkat, rutin, dan inspiratif
-                        seputar topik influencer marketing.
-                      </p>
+                      */}
+                      <div className="w-full flex flex-col flex-grow">
+                        <a href="#">
+                          <h5 className="mb-1 md:mt-2 md:mb-2 text-base md:text-lg text-gray-800 font-semibold tracking-tight text-heading">
+                            Newsletter
+                          </h5>
+                        </a>
+                        <p className="text-xs md:text-sm text-gray-800 text-body flex-grow">
+                          Berlangganan email singkat, rutin, dan inspiratif
+                          seputar topik influencer marketing.
+                        </p>
+                      </div>
                     </div>
 
                     {/* WEBINARS CARD */}
-                    <div className="bg-neutral-primary-soft block w-full p-6 rounded-base shadow-xs">
-                      {/* <a href="#">
+                    <div className="bg-neutral-primary-soft flex flex-row md:flex-col gap-4 p-4 md:p-6 rounded-base shadow-xs items-center md:items-start w-full">
+                      {/* <a href="#" className="w-1/3 md:w-full shrink-0">
                         <img
-                          className="rounded-base w-full h-40 object-cover bg-gray-100"
+                          className="rounded-base w-full h-auto md:h-40 object-cover bg-gray-100"
                           src="/img/navbar/resource-webinars.png"
                           alt="Webinars"
                         />
-                      </a> */}
-                      <a href="#">
-                        <h5 className="mt-6 mb-2 text-lg text-gray-800 font-semibold tracking-tight text-heading">
-                          Webinars
-                        </h5>
                       </a>
-                      <p className="mb-6 text-sm text-gray-800 text-body">
-                        Webinar live & on-demand bersama para ahli influencer
-                        marketing. Bergabunglah dalam diskusi dan pelajari
-                        strategi baru untuk program Anda.
-                      </p>
+                      */}
+                      <div className="w-full">
+                        <a href="#">
+                          <h5 className="mb-1 md:mt-2 md:mb-2 text-base md:text-lg text-gray-800 font-semibold tracking-tight text-heading">
+                            Webinars
+                          </h5>
+                        </a>
+                        <p className="text-xs md:text-sm text-gray-800 text-body">
+                          Webinar live & on-demand bersama para ahli influencer
+                          marketing. Bergabunglah dalam diskusi dan pelajari
+                          strategi baru untuk program Anda.
+                        </p>
+                      </div>
                     </div>
 
                     {/* YOUTUBE CHANNEL CARD */}
-                    <div className="bg-neutral-primary-soft block w-full p-6 rounded-base shadow-xs">
-                      {/* <a href="#">
+                    <div className="bg-neutral-primary-soft flex flex-row md:flex-col gap-4 p-4 md:p-6 rounded-base shadow-xs items-center md:items-start w-full">
+                      {/* <a href="#" className="w-1/3 md:w-full shrink-0">
                         <img
-                          className="rounded-base w-full h-40 object-cover bg-gray-100"
+                          className="rounded-base w-full h-auto md:h-40 object-cover bg-gray-100"
                           src="/img/navbar/resource-youtube.png"
                           alt="YouTube channel"
                         />
-                      </a> */}
-                      <a href="#">
-                        <h5 className="mt-6 mb-2 text-lg text-gray-800 font-semibold tracking-tight text-heading">
-                          Instagram & Tiktok
-                        </h5>
                       </a>
-                      <p className="mb-6 text-sm text-gray-800 text-body">
-                        Tips, trik, dan bedah tuntas yang akan membantu Anda
-                        memulai dan mengembangkan kemitraan influencer Anda.
-                      </p>
+                      */}
+                      <div className="w-full">
+                        <a href="#">
+                          <h5 className="mb-1 md:mt-2 md:mb-2 text-base md:text-lg text-gray-800 font-semibold tracking-tight text-heading">
+                            Instagram & Tiktok
+                          </h5>
+                        </a>
+                        <p className="text-xs md:text-sm text-gray-800 text-body">
+                          Tips, trik, dan bedah tuntas yang akan membantu Anda
+                          memulai dan mengembangkan kemitraan influencer Anda.
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
